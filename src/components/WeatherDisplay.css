@@ -1,0 +1,171 @@
+.weather-display {
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.location h2 {
+  margin: 0 0 5px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.timestamp {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.weather-main {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.temperature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.temp-value {
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.temp-unit {
+  font-size: 32px;
+  font-weight: 300;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.feels-like {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.detail-label {
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .weather-display {
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  .weather-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location {
+    margin-bottom: 20px;
+  }
+  
+  .location h2 {
+    font-size: 24px;
+  }
+  
+  .temp-value {
+    font-size: 60px;
+  }
+  
+  .temp-unit {
+    font-size: 28px;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .weather-icon img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-display {
+    padding: 15px;
+  }
+  
+  .temp-value {
+    font-size: 48px;
+  }
+  
+  .temp-unit {
+    font-size: 24px;
+  }
+  
+  .location h2 {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+  }
+}

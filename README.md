@@ -1,6 +1,59 @@
-# Getting Started with Create React App
+# Weather Dashboard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application features a comprehensive weather dashboard that fetches and displays current weather data from OpenWeatherMap API.
+
+## Features
+
+- 🌤️ **Current Weather Data**: Get real-time weather information for any city
+- 🌍 **Global Coverage**: Search for weather in cities worldwide
+- 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
+- ⚡ **Popular Cities**: Quick access to weather for major cities
+- 🔄 **Auto-refresh**: Refresh weather data with a single click
+- 💾 **Memory**: Remembers your last searched city
+- 🎨 **Beautiful UI**: Modern, gradient-based design with smooth animations
+
+## Weather Information Displayed
+
+- Current temperature and "feels like" temperature
+- Weather condition and description
+- Humidity and atmospheric pressure
+- Wind speed and direction
+- Visibility and cloud coverage
+- Sunrise and sunset times
+
+## Setup Instructions
+
+### 1. Get a Weather API Key
+
+1. Visit [OpenWeatherMap](https://openweathermap.org/api)
+2. Sign up for a free account
+3. Generate an API key (free tier allows 1000 calls/day)
+
+### 2. Configure Environment Variables
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` and add your API key:
+   ```
+   REACT_APP_WEATHER_API_KEY=your_actual_api_key_here
+   ```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
+
+```bash
+npm start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000).
 
 ## Available Scripts
 
